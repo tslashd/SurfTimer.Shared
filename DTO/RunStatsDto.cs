@@ -13,7 +13,7 @@
         public required float EndVelX { get; set; }
         public required float EndVelY { get; set; }
         public required float EndVelZ { get; set; }
-        public required int RunDate { get; set; }
-        public required string ReplayFrames { get; set; }
+        public int RunDate { get; set; }
+        public required string ReplayFrames { get; set; } // TODO: Try and change this to ReplayFramesString
     }
 }

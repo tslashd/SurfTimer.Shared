@@ -1,6 +1,6 @@
-﻿namespace SurfTimer.Shared.DTO
+﻿namespace SurfTimer.Shared.Entities
 {
-    public class PostResponseDto
+    public class PostResponseEntity
     {
         public int Id { get; set; }
         public int Inserted { get; set; }

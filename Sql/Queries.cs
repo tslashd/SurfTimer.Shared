@@ -43,7 +43,7 @@
                 SELECT mainquery.*, (SELECT COUNT(*) FROM `MapTimes` AS subquery 
                 WHERE subquery.`map_id` = mainquery.`map_id` AND subquery.`style` = mainquery.`style` 
                 AND subquery.`run_time` <= mainquery.`run_time` AND subquery.`type` = mainquery.`type` AND subquery.`stage` = mainquery.`stage`) AS `Rank` FROM `MapTimes` AS mainquery 
-                WHERE mainquery.`player_id` = @PlayerId AND mainquery.`map_id` = @MapId AND mainquery.`type` = @Type AND mainquery.`style` = @Style"; 
+                WHERE mainquery.`player_id` = @PlayerId AND mainquery.`map_id` = @MapId AND mainquery.`type` = @Type AND mainquery.`style` = @Style";
         public const string DB_QUERY_PB_GET_SPECIFIC_MAPTIME_DATA = @"
                 SELECT mainquery.*, (SELECT COUNT(*) FROM `MapTimes` AS subquery 
                 WHERE subquery.`map_id` = mainquery.`map_id` AND subquery.`style` = mainquery.`style` 
