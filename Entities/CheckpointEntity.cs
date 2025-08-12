@@ -3,7 +3,7 @@
     public class CheckpointEntity
     {
         public int MapTimeID { get; set; }
-        public int CP { get; set; }
+        public short CP { get; set; }
         public int RunTime { get; set; }
         public int EndTouch { get; set; }
         public int Attempts { get; set; }
@@ -16,7 +16,7 @@
 
         public CheckpointEntity() { }
 
-        public CheckpointEntity(int cp, int ticks, float startVelX, float startVelY, float startVelZ, float endVelX, float endVelY, float endVelZ, int endTouch, int attempts)
+        public CheckpointEntity(short cp, int ticks, float startVelX, float startVelY, float startVelZ, float endVelX, float endVelY, float endVelZ, int endTouch, int attempts)
         {
             CP = cp;
             RunTime = ticks;
