@@ -5,9 +5,9 @@ namespace SurfTimer.Shared.Entities
     public abstract class RunStatsEntity
     {
         public int ID { get; set; }
-        public short Type { get; set; }      // 0 = Map, 1 = Bonus, 2 = Stage
+        public short Type { get; set; } // 0 = Map, 1 = Bonus, 2 = Stage
         public int RunTime { get; set; }
-        public short Stage { get; set; }     // Signifies Bonus number when Type == 1
+        public short Stage { get; set; } // Signifies Bonus number when Type == 1
         public short Style { get; set; }
         public string? Name { get; set; }
         public float StartVelX { get; set; }

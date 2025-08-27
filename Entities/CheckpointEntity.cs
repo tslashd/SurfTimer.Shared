@@ -16,7 +16,18 @@
 
         public CheckpointEntity() { }
 
-        public CheckpointEntity(short cp, int ticks, float startVelX, float startVelY, float startVelZ, float endVelX, float endVelY, float endVelZ, int endTouch, int attempts)
+        public CheckpointEntity(
+            short cp,
+            int ticks,
+            float startVelX,
+            float startVelY,
+            float startVelZ,
+            float endVelX,
+            float endVelY,
+            float endVelZ,
+            int endTouch,
+            int attempts
+        )
         {
             CP = cp;
             RunTime = ticks;
